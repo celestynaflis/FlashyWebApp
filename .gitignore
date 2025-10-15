@@ -1,9 +1,11 @@
-flashy-frontend/node_modules/
-flashy-backend/node_modules/
+frontend/node_modules/
+backend/node_modules/
 shared/node_modules/
 
-flashy-frontend/.next/
-flashy-backend/dist/
+frontend/.next/
+backend/dist/
 
-flashy-frontend/.env
-flashy-backend/.env
+frontend/.env
+backend/.env
+
+.idea/
