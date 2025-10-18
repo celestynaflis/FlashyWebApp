@@ -1,9 +1,7 @@
 import { Request, Response } from 'express';
-import FlashCard, { IFlashCard } from '../models/FlashCard';
+import FlashCard, { IFlashCard } from '../models/flashCardsModels';
 
-// TODO - sprawdź czy kody błędów są prawiodłowe
-
-export const getFlashCards = async (reg: Request, res: Response) => {
+export const getFlashCards = async (req: Request, res: Response) => {
     try {
         const flashCards: IFlashCard[] = await FlashCard.find();
         res.json(flashCards);

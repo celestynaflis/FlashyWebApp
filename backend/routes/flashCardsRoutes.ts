@@ -1,15 +1,13 @@
-import express from 'express';
 import {
     getFlashCards,
     createFlashCard,
 } from '../controllers/flashCardsControllers';
+import express from 'express';
 
 const flashCardsRouter = express.Router();
 
-//GET /api/flashCards
-flashCardsRouter.get('/', getFlashCards);
+flashCardsRouter.get('/api/flashCards', getFlashCards);
 
-//POST /api/flashCards
-flashCardsRouter.post('/', createFlashCard);
+flashCardsRouter.post('/api/flashCards', createFlashCard);
 
 export default flashCardsRouter;
