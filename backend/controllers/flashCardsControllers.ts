@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
-import FlashCard, { IFlashCard } from '../models/flashCardsModels';
+import FlashCard, { IFlashCard } from '../models/FlashCard.model';
+import {deleteObjectById} from "./utils";
 
 export const getFlashCards = async (req: Request, res: Response) => {
     try {
@@ -19,3 +20,7 @@ export const createFlashCard = async (req: Request, res: Response) => {
         res.status(500).json({ error: error.message });
     }
 };
+
+export const deleteFlashCardById = async (req: Request, res: Response) => {
+    await deleteObjectById(req, res, FlashCard);
+}
