@@ -10,7 +10,7 @@ Web App for creating base of flashcards - Smart flashcards for smarter learning
 
 ### Frontend
 #### React with Next.js
-#### Redux Toolkit for state management
+#### Zustand for state management
 #### Tailwind CSS for styling
 #### Axios for fetching data 
 
