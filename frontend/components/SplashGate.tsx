@@ -46,13 +46,13 @@ export default function SplashGate({ children }: SplashGateProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] grid place-items-center bg-[#f3f3f3] transition-opacity duration-[350ms] ease-out ${
+      className={`fixed inset-0 z-[9999] grid place-items-center bg-white transition-opacity duration-[350ms] ease-out ${
         isFading ? "opacity-0" : "opacity-100"
       }`}
     >
       <div className="grid justify-items-center gap-14">
         <Image src="/logo.svg" alt="Flashy logo" width={134} height={87} priority />
-        <p className="text-center text-[clamp(1.1rem,2.7vw,2.7rem)] leading-[1.2] text-[#2f2f2f]">
+        <p className="text-center text-[clamp(1.1rem,2.7vw,2.7rem)] leading-[1.2] text-black">
           Smart Flashcards for Smarter Learning
         </p>
       </div>

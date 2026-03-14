@@ -17,13 +17,40 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fcfcfc;
+  --foreground: #363636;
+
+  --container-max-width: 1920px;
+  --container-padding-inline: clamp(1rem, 2.5vw, 3rem);
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --color-white: #ffffff;
+  --color-background: #fcfcfc;
+  --color-light-grey: #f5f5f5;
+  --color-grey: #d7d7d7;
+  --color-dark-grey: #a5a5a5;
+  --color-black: #363636;
+
+  --color-pink: #ff70a6;
+  --color-pink-light: #ffc5db;
+  --color-orange: #ff9770;
+  --color-orange-light: #ffcbb8;
+  --color-yellow: #ffd670;
+  --color-yellow-light: #ffe8af;
+  --color-green: #c6d791;
+  --color-green-light: #e6f1c6;
+  --color-blue: #70d6ff;
+  --color-blue-light: #bcecff;
+  --color-red: #ff4d4d;
+  --color-red-light: #ff7070;
+
+  --color-app-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --text-clamp-xs: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
+  --text-clamp-sm: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+
   --font-sans: "Satoshi", Arial, Helvetica, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
@@ -41,3 +68,11 @@ body {
   color: var(--foreground);
   font-family: "Satoshi", Arial, Helvetica, sans-serif;
 }
+
+.app-container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline);
+}
+

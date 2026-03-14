@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import GlobalMenu from "@/components/GlobalMenu";
 import SplashGate from "@/components/SplashGate";
 import "./globals.css";
 
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <SplashGate>{children}</SplashGate>
+        <SplashGate>
+          <GlobalMenu />
+          {children}
+        </SplashGate>
       </body>
     </html>
   );
